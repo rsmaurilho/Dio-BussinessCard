@@ -26,6 +26,7 @@ class MainActivity : AppCompatActivity() {
         binding.rvCards.adapter = adapter
         getAllBusinessCard()
         insertListeners()
+
     }
 
     private fun setUpPermissions() {
@@ -49,6 +50,7 @@ class MainActivity : AppCompatActivity() {
         }
         adapter.listenerShare = { card ->
             me.dio.businesscard.util.Image.share(this@MainActivity, card)
+           // throw RuntimeException("Test Crash") // Force a crash
         }
     }
 
@@ -57,6 +59,4 @@ class MainActivity : AppCompatActivity() {
             adapter.submitList(businessCards)
         }
     }
-
-
-}
+    }

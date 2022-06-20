@@ -3,8 +3,12 @@
   <component name="DesignSurface">
     <option name="filePathToZoomLevelMap">
       <map>
-        <entry key="..\:/Users/rsmau/AndroidStudioProjects/BusinessCard/app/src/main/res/layout/activity_add_business_card.xml" value="0.1" />
+        <entry key="..\:/Users/rsmau/AndroidStudioProjects/BusinessCard/app/src/main/res/drawable/color_blob.xml" value="0.123" />
+        <entry key="..\:/Users/rsmau/AndroidStudioProjects/BusinessCard/app/src/main/res/layout/activity_add_business_card.xml" value="0.2" />
         <entry key="..\:/Users/rsmau/AndroidStudioProjects/BusinessCard/app/src/main/res/layout/activity_main.xml" value="0.1" />
+        <entry key="..\:/Users/rsmau/AndroidStudioProjects/BusinessCard/app/src/main/res/layout/color_spiner_item.xml" value="0.1" />
+        <entry key="..\:/Users/rsmau/AndroidStudioProjects/BusinessCard/app/src/main/res/layout/color_spinner_bg.xml" value="0.1" />
+        <entry key="..\:/Users/rsmau/AndroidStudioProjects/BusinessCard/app/src/main/res/layout/color_spinner_item.xml" value="0.15729166666666666" />
         <entry key="..\:/Users/rsmau/AndroidStudioProjects/BusinessCard/app/src/main/res/layout/item_business_card.xml" value="0.1" />
       </map>
     </option>

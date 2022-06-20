@@ -19,7 +19,7 @@
         android:id="@+id/tv_title"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_margin="16dp"
+        android:layout_margin="8dp"
         android:text="@string/label_description_new_card"
         android:textSize="24sp"
         android:textStyle="bold"
@@ -101,34 +101,58 @@
 
     </com.google.android.material.textfield.TextInputLayout>
 
-    <com.google.android.material.textfield.TextInputLayout
-        android:id="@+id/til_cor"
-        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
-        android:layout_width="0dp"
-        android:layout_height="wrap_content"
-        android:layout_margin="16dp"
-        android:hint="@string/label_cor"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/til_empresa">
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/til_color"
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_margin="16dp"
+            android:hint="@string/label_cor"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/til_empresa">
 
-        <com.google.android.material.textfield.TextInputEditText
-            android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:inputType="text"
-            android:textAllCaps="true"
-            />
+    <com.google.android.material.textfield.TextInputEditText
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:inputType="text" />
 
     </com.google.android.material.textfield.TextInputLayout>
+
+    <TextView
+        android:layout_width="100dp"
+        android:layout_height="65dp"
+        android:layout_margin="16dp"
+        android:layout_marginStart="79dp"
+        android:text="@string/label_insira_cor"
+        android:textAlignment="center"
+        android:textSize="12sp"
+        app:layout_constraintBottom_toTopOf="@+id/btn_confirm"
+        app:layout_constraintEnd_toStartOf="@+id/colorSpinner"
+        app:layout_constraintStart_toStartOf="@+id/btn_confirm"
+        app:layout_constraintTop_toBottomOf="@id/til_color" />
+
+
+
+    <Spinner
+        android:id="@+id/colorSpinner"
+        android:layout_width="200dp"
+        android:layout_height="65dp"
+        android:layout_margin="16dp"
+        android:background="@drawable/color_blob"
+        android:spinnerMode="dialog"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/til_color" />
+
 
     <com.google.android.material.button.MaterialButton
         android:id="@+id/btn_confirm"
         android:layout_width="0dp"
-        android:layout_height="wrap_content"
+        android:layout_height="65dp"
         android:layout_margin="16dp"
         android:text="@string/label_confirmar"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/til_cor" />
+        app:layout_constraintTop_toBottomOf="@+id/colorSpinner"/>
 
 </androidx.constraintlayout.widget.ConstraintLayout>

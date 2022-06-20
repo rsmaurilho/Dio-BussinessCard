@@ -10,4 +10,5 @@
     <string name="label_confirmar">Confirmar</string>
     <string name="label_show_success">Registro inserido com sucesso.</string>
     <string name="label_share_to">Compartilhar</string>
+    <string name="label_insira_cor"><![CDATA[Insira a Cor no Campo Acima como Descrita na Caixa Silver ->]]></string>
 </resources>
